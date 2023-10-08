@@ -4,5 +4,10 @@
 
 body {
   background: black;
-  @apply text-white;
+  @apply text-primary;
+}
+
+.navbar {
+  @apply  bg-cyan-950 m-2 p-4 rounded-md flex h-14 relative;
+
 }
