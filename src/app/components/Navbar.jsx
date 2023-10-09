@@ -1,4 +1,5 @@
 import Link from "next/link"
+
 import DarkModeButton from "./DarkModeButton";
 
 export default function Navbar () {
@@ -12,6 +13,7 @@ export default function Navbar () {
                     <Link href="/" >About</Link>
                     <Link href="/" >Projects</Link>
                     <Link href="/" >Contact</Link>
+                    <div className="border border-slate-900/10 dark:border-slate-300/10 h-8"></div>
                     <DarkModeButton />
                 </div>
             </nav>
