@@ -8,6 +8,6 @@ body {
 }
 
 .navbar {
-  @apply  bg-cyan-950 m-2 p-4 rounded-md flex h-14 relative;
+  @apply  bg-gray-950  backdrop-blur-md p-4 items-center flex h-14 relative;
 
 }

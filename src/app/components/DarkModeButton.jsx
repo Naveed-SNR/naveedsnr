@@ -16,7 +16,7 @@ const DarkModeButton = () => {
   }
 
   return (
-    <button className='' onClick={e => theme === 'dark' ? setTheme('light') : setTheme('dark')}>
+    <button className='bg-black rounded-full p-3 ' onClick={e => theme === 'dark' ? setTheme('light') : setTheme('dark')}>
         {theme === 'dark' ? <FaMoon /> : <FaSun />}
     </button>
   )
