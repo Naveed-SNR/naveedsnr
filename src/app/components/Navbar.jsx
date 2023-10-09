@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import logo from "../../../public/vercel.svg";
+import DarkModeButton from "./DarkModeButton";
 export default function Navbar () {
     return (
         <>
@@ -14,6 +15,7 @@ export default function Navbar () {
                     <Link href="/" >About</Link>
                     <Link href="/" >Projects</Link>
                     <Link href="/" >Contact</Link>
+                    <DarkModeButton />
                 </div>
             </nav>
         </>
