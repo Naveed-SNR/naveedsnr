@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white/90 dark:bg-black text-black dark:text-primary border-b border-slate-900/10 dark:border-slate-300/10;
+  @apply bg-white/90 dark:bg-black text-black dark:text-primary 
+}
+
+body > div {
+  @apply  mt-11 sm:mx-11
 }
 
 .navbar {
-  @apply bg-white  dark:bg-gray-950  backdrop-blur-md p-4 items-center flex h-14 relative;
+  @apply bg-white  dark:bg-gray-950  backdrop-blur-md px-32 items-center flex h-14 relative border-b border-slate-900/10 dark:border-slate-300/10;
 
 }
