@@ -19,6 +19,14 @@ module.exports = {
          100: '#008599',
          200: '#0294b5'
         }
+      },
+      listStyleType: {
+        none: 'none',
+        disc: 'disc',
+        decimal: 'decimal',
+        square: 'square',
+        circle: 'circle',
+        roman: 'upper-roman',
       }
     },
   },
