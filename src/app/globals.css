@@ -7,7 +7,7 @@ body {
 }
 
 body > div {
-  @apply  mt-11 sm:mx-11
+  @apply  mt-11 lg:mx-32 mx-11
 }
 
 .navbar {
