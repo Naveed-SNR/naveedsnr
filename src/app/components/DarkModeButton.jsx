@@ -1,12 +1,54 @@
 "use client"
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
-import { FaMoon, FaSun } from 'react-icons/fa'
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
+
+const animation = {
+  dark: {
+    circle: {
+      r: 9,
+    },
+    mask: {
+      cx: '50%',
+      cy: '23%',
+    },
+    svg: {
+      transform: 'rotate(40deg)',
+      transition: 'transform 0.3s',
+    },
+    lines: {
+      opacity: 0,
+    },
+  },
+  light: {
+    circle: {
+      r: 5,
+    },
+    mask: {
+      cx: '100%',
+      cy: '0%',
+    },
+    svg: {
+      transform: 'rotate(30deg)',
+      transition: 'transform 0.3s',
+    },
+    lines: {
+      opacity: 1,
+    },
+  },
+  springConfig: { mass: 4, tension: 250, friction: 35 },
+};
 
 const DarkModeButton = () => {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme("light")
+  const [isDarkMode, setDarkMode] = useState(false);
 
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark":"light")
+    setDarkMode(!isDarkMode)
+  }
   useEffect(() => {
     setMounted(true)
   }, [])
@@ -16,9 +58,15 @@ const DarkModeButton = () => {
   }
 
   return (
-    <button className='bg-white dark:bg-black text-black dark:text-primary blackrounded-full p-3 ' onClick={e => theme === 'dark' ? setTheme('light') : setTheme('dark')}>
-        {theme === 'dark' ? <FaMoon /> : <FaSun />}
-    </button>
+    <DarkModeSwitch
+    style={{ transition: 'transform 0.1s'}}
+    animationProperties={animation}
+    checked={isDarkMode}
+    onChange={toggleTheme}
+    size={21}
+    moonColor='#000000'
+    sunColor='#00eaff'
+  />
   )
 }
 

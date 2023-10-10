@@ -6,7 +6,7 @@ export default function Navbar () {
         <>
             <nav className="navbar">
                 <div className="text-4xl font-black ">
-                    <span>{`<\\>`}</span>
+                    <span className="logo">{`<\\>`}</span>
                 </div>
                 <div className="flex absolute items-center font-medium space-x-8 right-0 me-28">
                     <Link href="/about" >About</Link>

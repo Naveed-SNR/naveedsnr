@@ -21,11 +21,11 @@ export default function About() {
           {/* Profile */}
           <div className="flex justify-center align-middle shrink">
             <AccountCircle className="text-primary text-8xl" />
-            <div className="flex justify-center shrink text-secondary mb-11">
+            <div className="flex justify-center shrink text-secondary-100 mb-11">
               <div className="lg:text-3xl text-2xl ms-4 grid-rows-1 min-w-max">
                 Naveed SNR
-                <p className="mt-2 text-secondary text-xs">Designer | Developer</p>
-                <div className="flex flex-row flex-nowrap gap-2 mt-3 text-base">
+                <p className="mt-2 text-secondary-200 text-sm">Designer | Developer</p>
+                <div className="flex flex-row flex-nowrap gap-2 mt-3 text-base text-secondary-200">
                   <FaEnvelope /><FaGithub /><FaLinkedin /><FaPhoneAlt /><FaInstagram />
                 </div>
               </div>
@@ -33,23 +33,24 @@ export default function About() {
           </div>
 
           {/* Bio */}
-          <div className="border-l border-cyan-800 lg:ms-8 mx-4 text-secondary">
+          <div className="border-l border-cyan-800 lg:ms-8 mx-4 text-secondary-100">
             <div className="ms-4">
               <h1 className="lg:text-3xl text-2xl">Bio</h1>
-              <div className="max-w-2xl mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel aliquam quis earum distinctio, maxime facere cumque illo, tenetur est adipisci praesentium doloribus labore minus eveniet. Voluptatem commodi minus id error.</div>
+              <div className="max-w-2xl mt-3 text-secondary-200">I'm a driven computer science student with a passion for software development. Currently pursuing a Bachelor's degree in Computer Science, I specialize in web technologies including HTML, CSS, JavaScript, React, and Next.js. Proficient in Photoshop for digital media and photo editing. Outside of my studies, I enjoy gaming and football.</div>
             </div>
           </div>
         </div>
       </div>
 
       {/* GitHub Contributions Graph */}
-      <div className="my-11">
+      <div className="my-11 p-8">
         <GitHubCalendar
           username={`Naveed-SNR`}
           colorScheme="dark"
           theme={explicitTheme}
-          blockSize={18.2}
-          fontSize={21}
+          blockSize={21}
+          fontSize={18.2}
+          showWeekdayLabels={true}
           renderBlock={(block, activity) =>
             React.cloneElement(block, {
               'data-tooltip-id': 'react-tooltip',
