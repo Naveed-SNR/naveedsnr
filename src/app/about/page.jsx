@@ -18,7 +18,7 @@ const explicitTheme = {
 export default function About() {
   return (
     <div className="about">
-      <div className="flex sm:flex-wrap shrink justify-center align-middle bg-cyan-950 dark:bg-gray-900 w-full relative rounded-md">
+      <div className="flex flex-wrap shrink justify-center align-middle bg-cyan-950 dark:bg-gray-900 w-full relative rounded-md">
         <div className="p-8 flex flex-wrap shrink align-middle">
           {/* Profile */}
           <div className="flex justify-center align-middle shrink">
@@ -44,12 +44,12 @@ export default function About() {
       </div>
 
       
-        <div className="mt-11 flex flex-wrap gap-4 justify-center shrink align-middle">
+        <div className="mt-11 flex flex-wrap sm:flex-nowrap gap-4 justify-center shrink align-middle">
           {/* Skills */}
-          <div className="flex flex-wrap justify-center align-middle max-w-3xl bg-cyan-950 dark:bg-gray-900 p-11 rounded-md shrink">
+          <div className="lg:py-11 flex sm:flex-wrap justify-center align-middle max-w-3xl md:max-w-xl sm:max-w-lg bg-cyan-950 dark:bg-gray-900 p-11 rounded-md shrink">
           <div className="mx-4 text-secondary-100">
                 <h1 className="lg:text-3xl text-2xl">Skills</h1>
-                <div className=" mt-8 text-secondary-200 text-justify">
+                <div className=" mt-8 text-secondary-200">
                     <ul className="list-disc">
                       <li className="my-3 ms-4 text-xl">
                           Web Development
@@ -74,33 +74,33 @@ export default function About() {
             </div>
           </div>
           {/* Technologies */}
-          <div className="flex flex-wrap justify-center align-middle max-w-3xl bg-cyan-950 dark:bg-gray-900 p-11 rounded-md shrink">
+          <div className="flex flex-wrap justify-center align-middle max-w-3xl md:max-w-xl sm:max-w-lg bg-cyan-950 dark:bg-gray-900 p-11 rounded-md shrink">
           <div className="">
                 <h1 className="lg:text-3xl text-2xl">Technologies</h1>
-                <div className="mt-8 flex justify-center flex-wrap gap-3 max-w-lg text-secondary-200">
-                    <div className="flex justify-center align-middle p-8 rounded-md border border-slate-700">
-                        <FaFigma className="text-4xl"/>
+                <div className="mt-11 flex justify-center align-middle flex-wrap gap-3 max-w-lg text-secondary-200">
+                    <div className="flex justify-center align-middle lg:p-8 p-4 rounded-md border border-slate-700">
+                        <FaFigma className="lg:text-4xl text-2xl"/>
                     </div>
-                    <div className="flex justify-center align-middle p-8 rounded-md border border-slate-700">
-                        <FaFigma className="text-4xl"/>
+                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
+                        <FaFigma className="lg:text-4xl text-2xl"/>
                     </div>
-                    <div className="flex justify-center align-middle p-8 rounded-md border border-slate-700">
-                        <FaFigma className="text-4xl"/>
+                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
+                        <FaFigma className="lg:text-4xl text-2xl"/>
                     </div>
-                    <div className="flex justify-center align-middle p-8 rounded-md border border-slate-700">
-                        <FaFigma className="text-4xl"/>
+                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
+                        <FaFigma className="lg:text-4xl text-2xl"/>
                     </div>
-                    <div className="flex justify-center align-middle p-8 rounded-md border border-slate-700">
-                        <FaFigma className="text-4xl"/>
+                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
+                        <FaFigma className="lg:text-4xl text-2xl"/>
                     </div>
-                    <div className="flex justify-center align-middle p-8 rounded-md border border-slate-700">
-                        <FaFigma className="text-4xl"/>
+                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
+                        <FaFigma className="lg:text-4xl text-2xl"/>
                     </div>
-                    <div className="flex justify-center align-middle p-8 rounded-md border border-slate-700">
-                        <FaFigma className="text-4xl"/>
+                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
+                        <FaFigma className="lg:text-4xl text-2xl"/>
                     </div>
-                    <div className="flex justify-center align-middle p-8 rounded-md border border-slate-700">
-                        <FaFigma className="text-4xl"/>
+                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
+                        <FaFigma className="lg:text-4xl text-2xl"/>
                     </div>   
                 </div>
               </div>
