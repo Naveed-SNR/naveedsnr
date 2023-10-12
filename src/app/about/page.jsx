@@ -54,7 +54,7 @@ export default function About() {
       </div>
 
       
-        <div className="mt-11 flex flex-wrap sm:flex-nowrap gap-4 justify-center shrink align-middle">
+      <div className="mt-11 flex flex-wrap sm:flex-nowrap gap-4 justify-center shrink align-middle">
           {/* Skills */}
           <div className="lg:py-11 flex sm:flex-wrap justify-center align-middle max-w-4xl md:max-w-2xl sm:max-w-lg bg-cyan-950 dark:bg-gray-900 p-11 rounded-md shrink">
           <div className="mx-4 text-secondary-100">
@@ -73,7 +73,7 @@ export default function About() {
                               <li className="ms-3 list-circle lg:text-md text-base">Excellent knowledge of technologies like Adboe Suite</li>
                           </ul>
                       </li>
-                      <li className="my-3 ms-3 text-xl">
+                      <li className="my-3 ms-4 text-xl">
                           Design
                           <ul>
                               <li className="ms-3 list-circle lg:text-md text-base">Great design choices and mastery in design tools like Figma & Adobe XD</li>
@@ -85,7 +85,7 @@ export default function About() {
           </div>
           {/* Technologies */}
           <div className="flex flex-wrap justify-center align-middle max-w-4xl md:max-w-2xl sm:max-w-lg bg-cyan-950 dark:bg-gray-900 p-11 rounded-md shrink">
-          <div className="flex align-middle justify-center flex-col">
+          <div className="">
                 <h1 className="lg:text-3xl text-2xl">Technologies</h1>
                 <div className="mt-11 flex justify-center align-middle flex-wrap gap-3 max-w-lg text-secondary-200">
                     <div className="flex justify-center align-middle lg:p-8 p-4 rounded-md border border-slate-700">
