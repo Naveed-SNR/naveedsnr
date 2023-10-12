@@ -13,7 +13,7 @@ body > div {
 
 
 .navbar {
-  @apply sticky bg-white  dark:bg-gray-950  backdrop-blur-md px-32 items-center flex h-14 top-0 w-full z-30 border-b border-slate-900/10 dark:border-slate-300/10;
+  @apply sticky  bg-white  dark:bg-gray-950  backdrop-blur-md px-32 items-center flex h-14 top-0 w-full z-30 border-b border-slate-900/10 dark:border-slate-300/10;
 
 }
 
