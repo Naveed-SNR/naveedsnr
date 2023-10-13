@@ -19,7 +19,7 @@ const explicitTheme = {
 // Shape of `labels` property (default values).
 // All properties are optional.
 const labels = {
-  totalCount: '{{count}} activities in {{year}}',
+  totalCount: '{{count}} contributions in {{year}}',
   legend: {
     less: 'Less',
     more: 'More',
@@ -121,7 +121,7 @@ export default function About() {
       {/* GitHub Contributions Graph */}
       <div className="flex flex-wrap shrink my-11 pt-3 p-3">
         <GitHubCalendar
-        className="flex shrink"
+          className="flex shrink"
           username={`Naveed-SNR`}
           colorScheme="dark"
           theme={explicitTheme}
@@ -143,24 +143,24 @@ export default function About() {
           <div className="flex shrink justify-between items-center w-screen ">
             <div className="mb-11">
               <GitHubCalendar
+                className ="shrink"
                 username={`Naveed-SNR`}
                 colorScheme="dark"
                 theme={explicitTheme}
                 labels={labels}
-                fontSize={18.2}
                 blockSize={0}
                 hideMonthLabels={true}
                 hideColorLegend={true}
               />
             </div>
-            <div className=" shrink flex flex-nowrap gap-1 align-middle">
+            <div className="flex shrink gap-1 items-center">
               <div>Less</div>
-              <div className="bg-cyan-950 w-4 h-4 rounded-sm"></div>
-              <div className="bg-cyan-900 w-4 h-4 rounded-sm"></div>
-              <div className="bg-cyan-800 w-4 h-4 rounded-sm"></div>
-              <div className="bg-cyan-700 w-4 h-4 rounded-sm"></div>
-              <div className="bg-cyan-600 w-4 h-4 rounded-sm"></div>
-            <div>More</div>
+              <div className="bg-cyan-950 w-3 h-3 rounded-sm"></div>
+              <div className="bg-cyan-900 w-3 h-3 rounded-sm"></div>
+              <div className="bg-cyan-800 w-3 h-3 rounded-sm"></div>
+              <div className="bg-cyan-700 w-3 h-3 rounded-sm"></div>
+              <div className="bg-cyan-600 w-3 h-3 rounded-sm"></div>
+              <div>More</div>
           </div>
           </div>
 
