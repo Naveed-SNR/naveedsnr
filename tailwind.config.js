@@ -16,17 +16,25 @@ module.exports = {
       margin: {
         21: '5.4rem',
         29: '6.924rem',
-        30: '7.4rem'
+        30: '7.4rem',
+        74: '16.04rem'
       },
       width: {
+        
         83: '21rem'
       },
       colors: {
-        primary: '#00eaff',
+        primary: {
+          100: '#00eaff',
+          200: '#00caff',
+          },
         secondary:{
          100: '#008599',
          200: '#0294b5'
         }
+      },
+      fontSize: {
+        type: '3.8rem'
       },
       zIndex: {
         21: '21'

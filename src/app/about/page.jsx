@@ -32,7 +32,7 @@ export default function About() {
         <div className="p-8 flex flex-wrap shrink align-middle">
           {/* Profile */}
           <div className="flex justify-center align-middle shrink">
-            <AccountCircle className="text-primary text-8xl" />
+            <AccountCircle className="text-primary-100 text-8xl" />
             <div className="flex justify-center shrink text-secondary-100 mb-11">
               <div className="lg:text-3xl text-2xl ms-4 grid-rows-1 min-w-max">
                 Naveed SNR
@@ -54,10 +54,10 @@ export default function About() {
       </div>
 
       
-      <div className="mt-11 flex flex-wrap sm:flex-nowrap gap-4 justify-center shrink align-middle">
+      <div className="mt-11 flex flex-wrap sm:flex-nowrap gap-4 justify-center lg:justify-between shrink">
           {/* Skills */}
-          <div className="lg:py-11 flex sm:flex-wrap justify-center align-middle max-w-4xl md:max-w-2xl sm:max-w-lg bg-cyan-950 dark:bg-gray-900 p-11 rounded-md shrink">
-          <div className="mx-4 text-secondary-100">
+          <div className="px-14 flex sm:flex-wrap justify-center align-middle max-w-4xl md:max-w-2xl sm:max-w-lg bg-cyan-950 dark:bg-gray-900 p-11 rounded-md shrink">
+          <div className=" text-secondary-100">
                 <h1 className="lg:text-3xl text-2xl">Skills</h1>
                 <div className=" mt-8 text-secondary-200">
                     <ul className="list-disc">
@@ -76,7 +76,7 @@ export default function About() {
                       <li className="my-3 ms-4 text-xl">
                           Design
                           <ul>
-                              <li className="ms-3 list-circle lg:text-md text-base">Great design choices and mastery in design tools like Figma & Adobe XD</li>
+                              <li className="ms-3 list-circle lg:text-md text-base">Stellar designing skills & mastery in tools like Figma & Adobe XD</li>
                           </ul>
                       </li>
                     </ul>
@@ -84,7 +84,7 @@ export default function About() {
             </div>
           </div>
           {/* Technologies */}
-          <div className="flex flex-wrap justify-center align-middle max-w-4xl md:max-w-2xl sm:max-w-lg bg-cyan-950 dark:bg-gray-900 p-11 rounded-md shrink">
+          <div className="px-14 flex flex-wrap justify-center align-middle max-w-4xl md:max-w-2xl sm:max-w-lg bg-cyan-950 dark:bg-gray-900 p-11 rounded-md shrink">
           <div className="">
                 <h1 className="lg:text-3xl text-2xl">Technologies</h1>
                 <div className="mt-11 flex justify-center align-middle flex-wrap gap-3 max-w-lg text-secondary-200">

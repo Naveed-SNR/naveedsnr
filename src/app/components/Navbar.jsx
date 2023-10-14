@@ -27,7 +27,9 @@ export default function Navbar () {
         <>
             <nav className="navbar">
                 <div className="text-4xl font-black ">
-                    <span className="logo">{`<\\>`}</span>
+                    <Link href="/">
+                        <span className="logo">{`<\\>`}</span>
+                    </Link>
                 </div>
                 <div className="flex justify-center absolute items-center font-medium space-x-8 right-0 lg:me-28 me-11">
                     <div className="lg:flex hidden items-center space-x-8">
@@ -38,9 +40,9 @@ export default function Navbar () {
                         <DarkModeButton />
                     </div>
                     <button className="block lg:hidden" onClick={handleClick}>
-                        <span className={`bg-black dark:bg-primary block transition-all duration-300 ease-out h-0.5 w-6 rounded ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`} ></span>
-                        <span className={`bg-black dark:bg-primary block transition-all duration-300 ease-out h-0.5 w-6 rounded my-1 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-                        <span className={`bg-black dark:bg-primary block transition-all duration-300 ease-out h-0.5 w-6 rounded ${isOpen ? '-rotate-45 -translate-y-2 ' : 'translate-y-0.5'}`} ></span>
+                        <span className={`bg-black dark:bg-primary-100 block transition-all duration-300 ease-out h-0.5 w-6 rounded ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`} ></span>
+                        <span className={`bg-black dark:bg-primary-100 block transition-all duration-300 ease-out h-0.5 w-6 rounded my-1 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+                        <span className={`bg-black dark:bg-primary-100 block transition-all duration-300 ease-out h-0.5 w-6 rounded ${isOpen ? '-rotate-45 -translate-y-2 ' : 'translate-y-0.5'}`} ></span>
                     </button>
                 </div>
             </nav>
@@ -50,16 +52,16 @@ export default function Navbar () {
                     animate={isOpen ? "open" : "closed"}
                     variants={variants} className={`mt-29 p-8 m-9 z-40 fixed rounded-xl bg-transparent/90 border  border-gray-900 w-83 h-5/6 text-secondary-200 font-medium`}
                 >
-                    <motion.div className="p-3 text-lg">
+                    <motion.div animate={{staggerChildren: 0.3}} transition={{delay: 0.3}} className="p-3 text-lg">
                         <Link href="/about" >About</Link>
                     </motion.div>
-                    <motion.div className="p-3 text-lg">
+                    <motion.div animate={{staggerChildren: 0.3}} transition={{delay: 0.3}} className="p-3 text-lg">
                         <Link href="/" >Projects</Link>
                     </motion.div>
-                     <motion.div className="p-3 text-lg">
+                     <motion.div animate={{staggerChildren: 0.3}} transition={{delay: 0.3}} className="p-3 text-lg">
                         <Link href="/" >Contact</Link>
                     </motion.div>
-                    <motion.div className="p-3">
+                    <motion.div animate={{staggerChildren: 0.33}} transition={{delay: 0.3}} className="p-3">
                         <DarkModeButton />
                     </motion.div>
                 </motion.div>

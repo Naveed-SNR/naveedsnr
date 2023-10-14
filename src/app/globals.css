@@ -18,7 +18,7 @@ body > div {
 }
 
 .logo {
-  @apply text-black dark:text-primary 
+  @apply text-black dark:text-primary-100 
 }
 
 .sidebar {
