@@ -14,15 +14,21 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       margin: {
+        9.2: '2.54rem',
         21: '5.4rem',
         29: '6.924rem',
         30: '7.4rem',
         74: '14.06rem',
       },
+      height: {
+        
+        83: '21rem',
+      },
       width: {
         
         83: '21rem',
       },
+      
       colors: {
         primary: {
           100: '#00eaff',
@@ -34,6 +40,7 @@ module.exports = {
         }
       }, 
       fontSize: {
+        3: '3rem',
         type: '3.8rem'
       },
       opacity: {

@@ -62,7 +62,7 @@ export default function Navbar () {
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.3}} className={`z-21 flex bg-black/30 justify-end backdrop-blur-sm fixed m-0 mt top-0 left-0 w-screen h-screen ${isOpen ? 'block': 'hidden'}`} onClick={handleClick}>
                 <motion.div 
                     animate={isOpen ? "open" : "closed"}
-                    variants={variants} className={`mt-29 p-8 m-9 z-40 fixed rounded-xl bg-transparent/90 border  border-gray-900 w-83 h-5/6 text-secondary-200 font-medium`}
+                    variants={variants} className={`mt-29 p-8 m-8 z-40 fixed rounded-xl bg-black border  border-gray-900 w-83 h-5/6 text-secondary-200 font-medium`}
                 >
                     <motion.div variants={variants} className="p-3 text-lg">
                         <Link href="/about" >About</Link>
