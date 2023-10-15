@@ -6,7 +6,19 @@ import { motion } from "framer-motion";
 
 export default function Navbar () {
     const [isOpen, setIsOpen] = useState(false);
+    const [navbg, setNavbg] = useState(false);
 
+    const changeNavBg = () => {
+        if (window.scrollY >= 92) {
+            setNavbg(true)
+        }
+        else 
+        {
+            setNavbg(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeNavBg)
   
     const handleClick = () => {
         setIsOpen(!isOpen);
@@ -14,8 +26,8 @@ export default function Navbar () {
 
     const variants = {
         open: { 
-            transition: { staggerChildren: 0.07, delayChildren: 0.2 },
-             x: -0 
+            transition: { staggerChildren: 0.07, delayChildren: 0.083 },
+             x: 0 
         },
         closed: { 
             transition: { staggerChildren: 0.05, staggerDirection: -1 },
@@ -25,7 +37,7 @@ export default function Navbar () {
 
     return (
         <>
-            <nav className="navbar">
+            <nav className={navbg ? 'navbar nav-bg' : 'navbar'}>
                 <div className="text-4xl font-black ">
                     <Link href="/">
                         <span className="logo">{`<\\>`}</span>
@@ -47,21 +59,21 @@ export default function Navbar () {
                 </div>
             </nav>
 
-            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.3}} className={`z-21 flex justify-end backdrop-blur-sm fixed m-0 mt top-0 left-0 w-screen h-screen ${isOpen ? 'block': 'hidden'}`} onClick={handleClick}>
+            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.3}} className={`z-21 flex bg-black/30 justify-end backdrop-blur-sm fixed m-0 mt top-0 left-0 w-screen h-screen ${isOpen ? 'block': 'hidden'}`} onClick={handleClick}>
                 <motion.div 
                     animate={isOpen ? "open" : "closed"}
                     variants={variants} className={`mt-29 p-8 m-9 z-40 fixed rounded-xl bg-transparent/90 border  border-gray-900 w-83 h-5/6 text-secondary-200 font-medium`}
                 >
-                    <motion.div animate={{staggerChildren: 0.3}} transition={{delay: 0.3}} className="p-3 text-lg">
+                    <motion.div variants={variants} className="p-3 text-lg">
                         <Link href="/about" >About</Link>
                     </motion.div>
-                    <motion.div animate={{staggerChildren: 0.3}} transition={{delay: 0.3}} className="p-3 text-lg">
+                    <motion.div variants={variants} className="p-3 text-lg">
                         <Link href="/" >Projects</Link>
                     </motion.div>
-                     <motion.div animate={{staggerChildren: 0.3}} transition={{delay: 0.3}} className="p-3 text-lg">
+                     <motion.div variants={variants} className="p-3 text-lg">
                         <Link href="/" >Contact</Link>
                     </motion.div>
-                    <motion.div animate={{staggerChildren: 0.33}} transition={{delay: 0.3}} className="p-3">
+                    <motion.div variants={variants} className="p-3">
                         <DarkModeButton />
                     </motion.div>
                 </motion.div>

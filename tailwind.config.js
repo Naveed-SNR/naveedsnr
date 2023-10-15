@@ -17,11 +17,11 @@ module.exports = {
         21: '5.4rem',
         29: '6.924rem',
         30: '7.4rem',
-        74: '16.04rem'
+        74: '14.06rem',
       },
       width: {
         
-        83: '21rem'
+        83: '21rem',
       },
       colors: {
         primary: {
@@ -30,14 +30,18 @@ module.exports = {
           },
         secondary:{
          100: '#008599',
-         200: '#0294b5'
+         200: '#0294b5',
         }
-      },
+      }, 
       fontSize: {
         type: '3.8rem'
       },
+      opacity: {
+        83: '.83',
+      },
       zIndex: {
-        21: '21'
+        11: '11',
+        21: '21',
       },
       listStyleType: {
         none: 'none',
