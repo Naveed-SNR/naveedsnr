@@ -40,8 +40,8 @@ module.exports = {
         }
       }, 
       fontSize: {
-        3: '3rem',
-        type: '3.8rem'
+        3: ['3rem', {lineHeight: '3.8rem'}],
+        type: ['3.8rem', {lineHeight: '4.4rem'}],
       },
       opacity: {
         83: '.83',

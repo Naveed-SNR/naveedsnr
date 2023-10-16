@@ -26,18 +26,18 @@ export default function Navbar () {
 
     const variants = {
         open: { 
-            transition: { staggerChildren: 0.07, delayChildren: 0.083 },
+            transition: { staggerChildren: 0.083, delayChildren: 0.083 },
              x: 0 
         },
         closed: { 
-            transition: { staggerChildren: 0.05, staggerDirection: -1 },
+            transition: { staggerChildren: 0.04, staggerDirection: -1 },
              x: "100%" 
         },
       }
 
     return (
         <>
-            <nav className={navbg ? 'navbar nav-bg' : 'navbar'}>
+            <motion.nav initial={{y:-100}} animate={{y:0}} className={navbg ? 'navbar nav-bg' : 'navbar'}>
                 <div className="text-4xl font-black ">
                     <Link href="/">
                         <span className="logo">{`<\\>`}</span>
@@ -57,7 +57,7 @@ export default function Navbar () {
                         <span className={`bg-black dark:bg-primary-100 block transition-all duration-300 ease-out h-0.5 w-6 rounded ${isOpen ? '-rotate-45 -translate-y-2 ' : 'translate-y-0.5'}`} ></span>
                     </button>
                 </div>
-            </nav>
+            </motion.nav>
 
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.3}} className={`z-21 flex bg-black/30 justify-end backdrop-blur-sm fixed m-0 mt top-0 left-0 w-screen h-screen ${isOpen ? 'block': 'hidden'}`} onClick={handleClick}>
                 <motion.div 
