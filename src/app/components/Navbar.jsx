@@ -37,7 +37,7 @@ export default function Navbar () {
 
     return (
         <>
-            <motion.nav initial={{y:-100}} animate={{y:0}} transition={{delay: 0.03, duration: 0.021,  type: "spring", stiffness: 128}} className={navbg ? 'navbar nav-bg' : 'navbar'}>
+            <motion.nav initial={{opacity: 0, y:-100}} animate={{opacity: 1, y:0}} transition={{delay: 0.03, duration: 0.021,  type: "spring", stiffness: 128}} className={navbg ? 'navbar nav-bg' : 'navbar'}>
                 <div className="text-4xl font-black ">
                     <Link href="/">
                         <span className="logo">{`<\\>`}</span>
