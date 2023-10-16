@@ -30,14 +30,14 @@ export default function Navbar () {
              x: 0 
         },
         closed: { 
-            transition: { staggerChildren: 0.04, staggerDirection: -1 },
+            transition: { staggerChildren: 0.03, staggerDirection: -1 },
              x: "100%" 
         },
       }
 
     return (
         <>
-            <motion.nav initial={{y:-100}} animate={{y:0}} className={navbg ? 'navbar nav-bg' : 'navbar'}>
+            <motion.nav initial={{y:-100}} animate={{y:0}} transition={{delay: 0.03, duration: 0.021,  type: "spring", stiffness: 128}} className={navbg ? 'navbar nav-bg' : 'navbar'}>
                 <div className="text-4xl font-black ">
                     <Link href="/">
                         <span className="logo">{`<\\>`}</span>
@@ -59,7 +59,7 @@ export default function Navbar () {
                 </div>
             </motion.nav>
 
-            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.3}} className={`z-21 flex bg-black/30 justify-end backdrop-blur-sm fixed m-0 mt top-0 left-0 w-screen h-screen ${isOpen ? 'block': 'hidden'}`} onClick={handleClick}>
+            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.021}} className={`z-21 flex bg-black/30 justify-end backdrop-blur-sm fixed m-0 mt top-0 left-0 w-screen h-screen ${isOpen ? 'block': 'hidden'}`} onClick={handleClick}>
                 <motion.div 
                     animate={isOpen ? "open" : "closed"}
                     variants={variants} className={`mt-29 p-8 m-8 z-40 fixed rounded-xl bg-black border  border-gray-900 w-83 h-5/6 text-secondary-200 font-medium`}

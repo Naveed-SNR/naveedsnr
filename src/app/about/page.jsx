@@ -1,6 +1,5 @@
 "use client"
 import React from "react";
-import { AccountCircle } from "@mui/icons-material";
 import { FaEnvelope, FaGithub, FaPhoneAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 import { FaFigma } from "react-icons/fa";
