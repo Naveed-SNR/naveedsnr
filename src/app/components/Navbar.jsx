@@ -47,7 +47,7 @@ export default function Navbar () {
                     <div className="lg:flex hidden items-center space-x-8">
                         <Link href="/about" >About</Link>
                         <Link href="/" >Projects</Link>
-                        <Link href="/" >Contact</Link>
+                        <Link href="/contact" >Contact</Link>
                         <div className="border border-slate-900/10 dark:border-slate-300/10 h-8 "></div>
                         <DarkModeButton />
                     </div>
@@ -71,7 +71,7 @@ export default function Navbar () {
                         <Link href="/" >Projects</Link>
                     </motion.div>
                      <motion.div variants={variants} className="p-3 text-lg">
-                        <Link href="/" >Contact</Link>
+                        <Link href="/contact" >Contact</Link>
                     </motion.div>
                     <motion.div variants={variants} className="p-3">
                         <DarkModeButton />
