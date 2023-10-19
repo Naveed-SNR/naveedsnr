@@ -13,7 +13,16 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      spacing: {
+        3.8: '0.92rem',
+        9.2: '2.54rem',
+        21: '5.4rem',
+        29: '6.924rem',
+        30: '7.4rem',
+        74: '14.06rem',
+      },
       margin: {
+        3.8: '0.92rem',
         9.2: '2.54rem',
         21: '5.4rem',
         29: '6.924rem',
@@ -42,6 +51,9 @@ module.exports = {
       fontSize: {
         3: ['3rem', {lineHeight: '3.8rem'}],
         type: ['3.8rem', {lineHeight: '4.4rem'}],
+      },
+      transitionProperty: {
+        border: 'border',
       },
       opacity: {
         83: '.83',

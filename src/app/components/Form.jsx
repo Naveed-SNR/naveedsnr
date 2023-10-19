@@ -2,14 +2,14 @@ import React from 'react';
 
 export default function Form() {
   return (
-    <div className="flex items-center min-h-screen bg-secondary-100">
-      <div className="flex ms-8 w-full ">
-        <div className="max-w-xl w-full my-10 bg-gray-800 p-5 rounded-md shadow-sm">
+    <div className="flex rounded-lg items-center min-h-screen bg-slate-950">
+      <div className="flex justify-center w-full ">
+        <div className="max-w-xl w-full my-11 rounded-lg shadow-sm">
           <div className="text-center">
-            <h1 className="my-3 text-3xl font-semibold text-gray-100">
+            <h1 className="my-3 text-3xl font-semibold text-primary-100">
               Contact Us
             </h1>
-            <p className="text-gray-400 dark:text-gray-400">
+            <p className="text-secondary-200 dark:text-secondary-200">
               Fill up the form below to send us a message.
             </p>
           </div>
@@ -19,60 +19,60 @@ export default function Form() {
               <input type="hidden" name="subject" value="New Submission from Web3Forms" />
               <input type="checkbox" name="botcheck" id="" style={{ display: 'none' }} />
 
-              <div className="mb-6">
-                <label htmlFor="name" className="block mb-2 text-sm text-gray-400">Full Name</label>
+              <div className="relative mb-4">
                 <input
                   type="text"
                   name="name"
                   id="name"
-                  placeholder="John Doe"
+                  placeholder="Email"
                   required
-                  className="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 dark:text-primary-100 bg-gray-100 text-sm focus:outline-none"
+                  className="w-full px-3 py-2 h-12 rounded-lg placeholder-transparent dark:text-secondary-100 bg-transparent text-sm border border-slate-900 focus:outline-none focus:border-2 focus:border-secondary-100 peer transition-border"
                 />
+                <label htmlFor="name" className="absolute -top-1 ms-3 block bg-slate-950 px-1 text-sm text-secondary-200 peer-placeholder-shown:top-3.8 peer-placeholder-shown:mt-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-secondary-100 transition-all">Full Name</label>
               </div>
-              <div className="mb-6">
-                <label htmlFor="email" className="block mb-2 text-sm text-gray-400">Email Address</label>
-                <input
-                  type="email"
+              <div className="relative mb-4">
+              <input
+                  type="text"
                   name="email"
                   id="email"
-                  placeholder="you@company.com"
+                  placeholder="Email"
                   required
-                  className="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none"
+                  className="w-full px-3 py-2 h-12 rounded-lg placeholder-transparent dark:text-secondary-100 bg-transparent text-sm border border-slate-900 focus:outline-none focus:border-2 focus:border-secondary-100 peer transition-border"
                 />
+                <label htmlFor="email" className="absolute -top-1 ms-3 block bg-slate-950 px-1 text-sm text-secondary-200 peer-placeholder-shown:top-3.8 peer-placeholder-shown:mt-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-secondary-100 transition-all">Email</label>
               </div>
-              <div className="mb-6">
-                <label htmlFor="phone" className="block mb-2 text-sm text-gray-400">Phone Number</label>
-                <input
+              <div className="relative mb-4">
+              <input
                   type="text"
                   name="phone"
                   id="phone"
-                  placeholder="+1 (555) 1234-567"
+                  placeholder="Phone Number"
                   required
-                  className="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none"
+                  className="w-full px-3 py-2 h-12 rounded-lg placeholder-transparent dark:text-secondary-100 bg-transparent text-sm border border-slate-900 focus:outline-none focus:border-2 focus:border-secondary-100 peer transition-border"
                 />
+                <label htmlFor="phone" className="absolute -top-1 ms-3 block bg-slate-950 px-1 text-sm text-secondary-200 peer-placeholder-shown:top-3.8 peer-placeholder-shown:mt-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-secondary-100 transition-all">Phone Number</label>
               </div>
-              <div className="mb-6">
-                <label htmlFor="message" className="block mb-2 text-sm text-gray-400">Your Message</label>
-
+              <div className="relative mb-4">
                 <textarea
-                  rows="5"
+                  rows="4"
                   name="message"
                   id="message"
                   placeholder="Your Message"
-                  className="w-full px-3 py-2 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none"
+                  className="w-full px-3 py-2 rounded-lg placeholder-transparent text-secondary-100 bg-transparent text-sm border border-slate-900 focus:outline-none focus:border-2 focus:border-secondary-100 peer"
                   required
-                ></textarea>
+                >
+                </textarea>
+                <label htmlFor="message" className=" absolute -top-1 ms-3 block bg-slate-950 text-sm text-secondary-200 peer-placeholder-shown:top-3.8 peer-placeholder-shown:mt-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-secondary-100 transition-all">Your Message</label>
               </div>
-              <div className="mb-6">
+              <div className="mb-4">
                 <button
                   type="submit"
-                  className="w-full bg-indigo-600 inline-block text-white no-underline hover:text-indigo-100 py-4 px-4 rounded-sm focus:outline-none"
+                  className="w-full bg-primary-100 inline-block text-black no-underline hover:bg-primary-200 py-4 px-4 rounded focus:outline-none"
                 >
                   Send Message
                 </button>
               </div>
-              <p className="text-base text-center text-gray-400" id="result"></p>
+              <p className="text-base text-center text-secondary-200" id="result"></p>
             </form>
           </div>
         </div>
