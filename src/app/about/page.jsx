@@ -60,14 +60,12 @@ export default function About() {
               <div className="max-w-2xl mt-3 text-secondary-200 text-justify text-lg font-medium">I'm a driven computer science student with a passion for software development. Currently pursuing a Bachelor's degree in Computer Science, I specialize in web technologies including HTML, CSS, JavaScript, React, and Next.js. Proficient in Photoshop for digital media and photo editing. Outside of my studies, I enjoy gaming and football.</div>
             </div>
           </div>
-        
       </div>
-
       
-      <div className="mt-11 flex flex-wrap md:flex-nowrap gap-4 justify-center justify-items-strech">
+      <div className="mt-11 flex lg:flex-nowrap flex-wrap md:flex-nowrap gap-4 justify-center justify-items-strech">
           {/* Skills */}
-          <div className="px-14 flex sm:flex-wrap justify-center align-middle max-w-4xl md:max-w-2xl sm:max-w-lg bg-cyan-950 dark:bg-gray-950 p-11 rounded-md shrink">
-          <div className=" text-secondary-200">
+          <div className="px-14 w-full flex sm:flex-wrap justify-center align-middle bg-cyan-950 dark:bg-gray-950 p-11 rounded-md shrink">
+          <div className="text-secondary-200">
                 <h1 className="lg:text-3xl text-2xl font-semibold">Skills</h1>
                 <div className=" mt-8 text-secondary-200">
                     <ul className="font-medium list-disc">
@@ -94,34 +92,39 @@ export default function About() {
             </div>
           </div>
           {/* Technologies */}
-          <div className="px-14 flex flex-wrap justify-center align-middle max-w-4xl md:max-w-2xl sm:max-w-lg bg-cyan-950 dark:bg-gray-950 p-11 rounded-md shrink">
+          <div className="px-14 w-full flex flex-wrap justify-center align-middle bg-cyan-950 dark:bg-gray-950 p-11 rounded-md">
           <div className="">
                 <h1 className="lg:text-3xl text-2xl text-secondary-200 font-semibold">Technologies</h1>
-                <div className="mt-11 flex justify-center align-middle flex-wrap lg:gap-3 gap-8 max-w-lg text-secondary-200">
-                    <div className="flex justify-center align-middle lg:p-8 p-4 rounded-md border border-slate-700">
-                      <Icon icon="nonicons:next-16" className="lg:text-4xl text-2xl" />
-                    </div>
-                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                      <Icon icon="mdi:firebase" className="lg:text-4xl text-2xl" />
-                    </div>
-                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                      <Icon icon="simple-icons:adobephotoshop" className="lg:text-4xl text-2xl" />
-                    </div>
-                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                      <Icon icon="simple-icons:react" className="lg:text-4xl text-2xl" />
-                    </div>
-                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                      <Icon icon="solar:figma-bold" className="lg:text-4xl text-2xl" />
-                    </div>
-                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                      <Icon icon="akar-icons:html-fill" className="lg:text-4xl text-2xl" />
-                    </div>
-                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                      <Icon icon="akar-icons:css-fill" className="lg:text-4xl text-2xl" />
-                    </div>
-                    <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                      <Icon icon="akar-icons:javascript-fill" className="lg:text-4xl text-2xl" />
-                    </div>   
+                <div className="">
+                  <div className="mt-11 flex justify-center items-center flex-wrap lg:gap-3 gap-1 max-w-sm text-secondary-200">
+                      <div className="flex justify-center items-center xl:p-7.4 p-4 rounded-md border border-secondary-100">
+                        <Icon icon="nonicons:next-16" className="xl:text-4xl text-3xl" />
+                      </div>
+                      <div className="flex justify-center items-center xl:p-7.4  p-4 rounded-md border border-secondary-100">
+                        <Icon icon="mdi:firebase" className="xl:text-4xl text-3xl" />
+                      </div>
+                      <div className="flex justify-center items-center xl:p-7.4  p-4 rounded-md border border-secondary-100">
+                        <Icon icon="simple-icons:adobephotoshop" className="xl:text-4xl text-3xl" />
+                      </div>
+                      <div className="flex ustify-center items-center xl:p-7.4  p-4 rounded-md border border-secondary-100">
+                        <Icon icon="simple-icons:react" className="xl:text-4xl text-3xl" />
+                      </div>
+                      <div className="flex justify-center items-center xl:p-7.4  p-4 rounded-md border border-secondary-100">
+                        <Icon icon="solar:figma-bold" className="xl:text-4xl text-3xl" />
+                      </div>
+                      <div className="flex justify-center items-center xl:p-7.4  p-4 rounded-md border border-secondary-100">
+                        <Icon icon="akar-icons:html-fill" className="xl:text-4xl text-3xl" />
+                      </div>
+                      <div className="flex ustify-center items-center xl:p-7.4  p-4 rounded-md border border-secondary-100">
+                        <Icon icon="akar-icons:css-fill" className="xl:text-4xl text-3xl" />
+                      </div>
+                      <div className="flex justify-center items-center xl:p-7.4  p-4 rounded-md border border-secondary-100">
+                        <Icon icon="akar-icons:javascript-fill" className="xl:text-4xl text-3xl" />
+                      </div>
+                      <div className="flex justify-center items-center xl:p-7.4  p-4 rounded-md border border-secondary-100">
+                        <Icon icon="bytesize:github" className="xl:text-4xl text-3xl" />
+                      </div>
+                  </div>
                 </div>
               </div>
           </div>

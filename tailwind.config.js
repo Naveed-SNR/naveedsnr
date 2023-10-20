@@ -14,6 +14,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       spacing: {
+        2.1: '0.542rem',
         3.8: '0.92rem',
         9.2: '2.54rem',
         21: '5.4rem',
@@ -23,11 +24,25 @@ module.exports = {
       },
       margin: {
         3.8: '0.92rem',
+        7.4: '1.82rem',
         9.2: '2.54rem',
         21: '5.4rem',
         29: '6.924rem',
         30: '7.4rem',
         74: '14.06rem',
+      },
+      padding: {
+        3.8: '0.92rem',
+        7.4: '1.82rem',
+        9.2: '2.54rem',
+        21: '5.4rem',
+        29: '6.924rem',
+        30: '7.4rem',
+        74: '14.06rem',
+      },
+      gap: {
+        0.92: '0.21rem',
+        1.1: '0.3rem',
       },
       height: {
         
