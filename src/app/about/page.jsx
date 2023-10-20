@@ -3,6 +3,7 @@ import React from "react";
 import { FaEnvelope, FaGithub, FaPhoneAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 import { FaFigma } from "react-icons/fa";
+import { Icon } from '@iconify/react'; 
 import GitHubCalendar from 'react-github-calendar';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 
@@ -98,28 +99,28 @@ export default function About() {
                 <h1 className="lg:text-3xl text-2xl text-secondary-200 font-semibold">Technologies</h1>
                 <div className="mt-11 flex justify-center align-middle flex-wrap lg:gap-3 gap-8 max-w-lg text-secondary-200">
                     <div className="flex justify-center align-middle lg:p-8 p-4 rounded-md border border-slate-700">
-                        <FaFigma className="lg:text-4xl text-2xl"/>
+                      <Icon icon="nonicons:next-16" className="lg:text-4xl text-2xl" />
                     </div>
                     <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                        <FaFigma className="lg:text-4xl text-2xl"/>
+                      <Icon icon="mdi:firebase" className="lg:text-4xl text-2xl" />
                     </div>
                     <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                        <FaFigma className="lg:text-4xl text-2xl"/>
+                      <Icon icon="simple-icons:adobephotoshop" className="lg:text-4xl text-2xl" />
                     </div>
                     <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                        <FaFigma className="lg:text-4xl text-2xl"/>
+                      <Icon icon="simple-icons:react" className="lg:text-4xl text-2xl" />
                     </div>
                     <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                        <FaFigma className="lg:text-4xl text-2xl"/>
+                      <Icon icon="solar:figma-bold" className="lg:text-4xl text-2xl" />
                     </div>
                     <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                        <FaFigma className="lg:text-4xl text-2xl"/>
+                      <Icon icon="akar-icons:html-fill" className="lg:text-4xl text-2xl" />
                     </div>
                     <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                        <FaFigma className="lg:text-4xl text-2xl"/>
+                      <Icon icon="akar-icons:css-fill" className="lg:text-4xl text-2xl" />
                     </div>
                     <div className="flex justify-center align-middle lg:p-8  p-4 rounded-md border border-slate-700">
-                        <FaFigma className="lg:text-4xl text-2xl"/>
+                      <Icon icon="akar-icons:javascript-fill" className="lg:text-4xl text-2xl" />
                     </div>   
                 </div>
               </div>
