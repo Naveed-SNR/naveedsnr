@@ -65,7 +65,19 @@ module.exports = {
       }, 
       fontSize: {
         3: ['3rem', {lineHeight: '3.8rem'}],
-        type: ['3.8rem', {lineHeight: '4.4rem'}],
+        3.8: ['3.8rem', {lineHeight: '4.4rem'}],
+        4: ['4rem', {lineHeight: '4.25rem'}], 
+        7.4: ['5.42rem', {lineHeight: '5.844rem'}],
+      },
+      screens: {
+        'tablet': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'laptop': '1024px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'xxl': '2000',
+        // => @media (min-width: 1280px) { ... }
       },
       transitionProperty: {
         border: 'border',
