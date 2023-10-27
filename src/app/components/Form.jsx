@@ -3,7 +3,7 @@ import React from 'react';
 export default function Form() {
   return (
     <div className="flex rounded-lg items-center min-h-screen bg-slate-950">
-      <div className="flex justify-center w-full ">
+      <div className="p-3 flex w-full ">
         <div className="max-w-xl w-full my-11 rounded-lg shadow-sm">
           <div className="text-center">
             <h1 className="my-3 text-3xl font-semibold text-primary-100">
