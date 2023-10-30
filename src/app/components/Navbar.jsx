@@ -45,9 +45,9 @@ export default function Navbar () {
                 </div>
                 <div className="flex justify-center absolute items-center font-medium space-x-8 right-0 lg:me-28 me-11">
                     <div className="lg:flex hidden items-center space-x-8">
-                        <Link href="/about" >About</Link>
-                        <Link href="/" >Projects</Link>
-                        <Link href="/contact" >Contact</Link>
+                        <Link href="/#about" >About</Link>
+                        <Link href="/#projects" >Projects</Link>
+                        <Link href="/#contact" >Contact</Link>
                         <div className="border border-slate-900/10 dark:border-slate-300/10 h-8 "></div>
                         <DarkModeButton />
                     </div>
@@ -65,13 +65,13 @@ export default function Navbar () {
                     variants={variants} className={`mt-29 p-8 m-8 z-40 fixed rounded-xl bg-black border  border-gray-900 w-83 h-5/6 text-secondary-200 font-medium`}
                 >
                     <motion.div variants={variants} className="p-3 text-lg">
-                        <Link href="/about" >About</Link>
+                        <Link href="/#about" >About</Link>
                     </motion.div>
                     <motion.div variants={variants} className="p-3 text-lg">
-                        <Link href="/" >Projects</Link>
+                        <Link href="/#projects" >Projects</Link>
                     </motion.div>
                      <motion.div variants={variants} className="p-3 text-lg">
-                        <Link href="/contact" >Contact</Link>
+                        <Link href="/#contact" >Contact</Link>
                     </motion.div>
                     <motion.div variants={variants} className="p-3">
                         <DarkModeButton />
