@@ -28,7 +28,7 @@ const labels = {
 export default function About() {
   return (
     <div id="about" className="about">
-      <div className="lg:p-11 p-4 flex flex-wrap  justify-start items-start bg-cyan-950 dark:bg-gray-950 w-full relative rounded-md">
+      <div className="xl:p-11 p-4 flex flex-wrap  justify-start items-start bg-cyan-950 dark:bg-gray-950 w-full relative rounded-md">
           {/* Profile */}
           <div className="mb-8 flex flex-wrap justify-center items-start gap-4">
             <div className="mt-2">
