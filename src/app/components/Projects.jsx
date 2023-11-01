@@ -3,7 +3,7 @@ import Image from 'next/image'
 import dispersion from "../../../public/images/dispersion.jpg";
 export default function Projects() {
   return (
-    <div id="projects" className="projects">
+    <div id="projects" className="projects my-30">
       <div className="text-center p-11">
         <div className="text-primary-100 text-4xl font-bold">Projects</div>
         <div className="p-4 text-secondary-100 text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, corporis voluptas?</div>
