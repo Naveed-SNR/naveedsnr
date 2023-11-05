@@ -10,9 +10,9 @@ export default function Home() {
   
   return (
     <>
-      <div className="home h-screen">
-        <motion.div className="lg:mt-40 shrink flex lg:flex-nowrap flex-wrap-reverse items-start justify-center lg:justify-between xxl:justify-center lg:space-x-48 w-full lg:border-l border-gray-800">
-          <motion.div className="lg:ms-11" initial={{opacity: 0, y: 100}} animate={{opacity: 1, y:0}} transition={{delayChildren: 1, delay: 0.21}}>
+      <div className="home">
+        <motion.div className="lg:mt-74 xl:mb-74 shrink flex lg:flex-nowrap flex-wrap-reverse items-start justify-center lg:justify-between xxl:justify-center lg:space-x-48 w-full">
+          <motion.div className="lg:ps-11 lg:border-l border-gray-800" initial={{opacity: 0, y: 100}} animate={{opacity: 1, y:0}} transition={{delayChildren: 1, delay: 0.21}}>
             <motion.div className="xl:text-7.4  xxl:text-9xl lg:text-3 flex justify-center lg:justify-start text-3 font-extrabold">
               <span className="my-1 text-primary-100 text-center ">Naveed SNR</span>
             </motion.div>

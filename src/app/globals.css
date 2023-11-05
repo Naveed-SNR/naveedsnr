@@ -19,7 +19,7 @@ body > div {
 
 .navbar {
   transition: background-color 0.83s ease-out;
-  @apply sticky bg-transparent lg:px-32 p-8 items-center flex h-14 top-0 w-full z-30 
+  @apply fixed bg-transparent lg:px-32 p-8 items-center flex h-14 top-0 w-full z-30 
 }
 .nav-bg {
   @apply  dark:bg-black/83  backdrop-blur-md border-b border-slate-900/10 dark:border-slate-300/10;
