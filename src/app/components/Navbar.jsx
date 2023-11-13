@@ -1,24 +1,34 @@
 "use client"
 import Link from "next/link"
 import DarkModeButton from "./DarkModeButton";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Navbar () {
     const [isOpen, setIsOpen] = useState(false);
     const [navbg, setNavbg] = useState(false);
 
-    const changeNavBg = () => {
-        if (window.scrollY >= 92) {
-            setNavbg(true)
-        }
-        else 
-        {
-            setNavbg(false)
-        }
-    }
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+        
 
-    window.addEventListener('scroll', changeNavBg)
+            const changeNavBg = () => {
+                if (window.scrollY >= 92) {
+                    setNavbg(true);
+                } else {
+                    setNavbg(false);
+                }
+            };
+
+            window.addEventListener('scroll', changeNavBg);
+
+            return () => {
+                window.removeEventListener('scroll', changeNavBg);
+            };
+        }
+    }, []);
+
+
   
     const handleClick = () => {
         setIsOpen(!isOpen);

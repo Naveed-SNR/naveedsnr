@@ -57,7 +57,7 @@ export default function About() {
           <div className="my-3 border-l border-cyan-800 text-secondary-100">
             <div className="ms-4">
               <h1 className="lg:text-4xl text-3xl font-semibold">Bio</h1>
-              <div className="max-w-2xl mt-3 text-secondary-200 text-justify text-lg font-medium">I'm a driven computer science student with a passion for software development. Currently pursuing a Bachelor's degree in Computer Science, I specialize in web technologies including HTML, CSS, JavaScript, React, and Next.js. Proficient in Photoshop for digital media and photo editing. Outside of my studies, I enjoy gaming and football.</div>
+              <div className="max-w-2xl mt-3 text-secondary-200 text-justify text-lg font-medium">{`I'm a driven computer science student with a passion for software development. Currently pursuing a Bachelor's degree in Computer Science, I specialize in web technologies including HTML, CSS, JavaScript, React, and Next.js. Proficient in Photoshop for digital media and photo editing. Outside of my studies, I enjoy gaming and football.`}</div>
             </div>
           </div>
       </div>

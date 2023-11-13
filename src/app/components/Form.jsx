@@ -10,7 +10,7 @@ export default function Form() {
           Contact Us
         </h1>
         <p className="text-secondary-200 dark:text-secondary-200">
-          Let's get in touch
+          {`Let's get in touch`}
         </p>
       </div>
       <div>
