@@ -1,5 +1,6 @@
 "use client"
 import React from "react";
+import Type2 from "../components/Type2.jsx";
 import { FaEnvelope, FaGithub, FaPhoneAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 import { FaFigma } from "react-icons/fa";
@@ -28,9 +29,15 @@ const labels = {
 export default function About() {
   return (
     <div id="about" className="about">
-      <div className="xl:p-11 p-4 flex flex-wrap  justify-start items-start bg-cyan-950 dark:bg-gray-950 w-full relative rounded-md">
+
+      <div className="xl:p-11 p-4 flex flex-wrap justify-center items-start bg-cyan-950 dark:bg-gray-950 w-full relative rounded-md">
+
+      <div className="w-full justify-self-center self-center text-center p-11">
+        <div className="text-primary-100 text-4xl font-bold">About</div>
+        <div className="p-4 text-secondary-100 text-xl">Here's a little about myself</div>
+      </div>
           {/* Profile */}
-          <div className="mb-8 flex flex-wrap justify-center items-start gap-4">
+          {/* <div className="mb-8 flex flex-wrap justify-center items-start gap-4">
             <div className="mt-2">
               <Image
                 className="rounded"
@@ -52,12 +59,15 @@ export default function About() {
                   <FaEnvelope /><FaGithub /><FaLinkedin /><FaPhoneAlt /><FaInstagram />
                 </div>
             </div>
-          </div>
+          </div> */}
           {/* Bio */}
-          <div className="my-3 border-l border-cyan-800 text-secondary-100">
+          
+          <div className="w-full my-3 border-l border-cyan-800 text-secondary-100">
             <div className="ms-4">
               <h1 className="lg:text-4xl text-3xl font-semibold">Bio</h1>
-              <div className="max-w-2xl mt-3 text-secondary-200 text-justify text-lg font-medium">{`I'm a driven computer science student with a passion for software development. Currently pursuing a Bachelor's degree in Computer Science, I specialize in web technologies including HTML, CSS, JavaScript, React, and Next.js. Proficient in Photoshop for digital media and photo editing. Outside of my studies, I enjoy gaming and football.`}</div>
+              <div className="mt-3 text-secondary-200 text-justify text-lg font-medium">
+                <Type2 />
+              </div>
             </div>
           </div>
       </div>
