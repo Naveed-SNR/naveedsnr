@@ -2,7 +2,7 @@
 import Image from "next/image.js"
 import Type from "../components/Type.jsx";
 import Profile from "../../../public/images/Profile.jpg"
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { Icon } from '@iconify/react'; 
 import Tilt from 'react-parallax-tilt';
 

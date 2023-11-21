@@ -1,8 +1,9 @@
 "use client"
 import React from "react";
+import { useRef } from "react";
 import Type2 from "../components/Type2.jsx";
 import { FaEnvelope, FaGithub, FaPhoneAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
-
+import { motion, useInView } from "framer-motion"
 import { FaFigma } from "react-icons/fa";
 import { Icon } from '@iconify/react'; 
 import GitHubCalendar from 'react-github-calendar';
@@ -26,11 +27,18 @@ const labels = {
     more: 'More',
   },
 };
+
+
+
 export default function About() {
+  
+const ref = useRef(null)
+const isInView = useInView(ref, { once: true });
   return (
+    
     <div id="about" className="about">
 
-      <div className="xl:p-11 p-4 flex flex-wrap justify-center items-start bg-cyan-950 dark:bg-gray-950 w-full relative rounded-md">
+      <motion.div style={{opacity: isInView ? 1: 0}} ref={ref} className="xl:p-11 p-4 flex flex-wrap justify-center items-start bg-cyan-950 dark:bg-gray-950 w-full relative rounded-md">
 
       <div className="w-full justify-self-center self-center text-center p-11">
         <div className="text-primary-100 text-4xl font-bold">About</div>
@@ -70,7 +78,7 @@ export default function About() {
               </div>
             </div>
           </div>
-      </div>
+      </motion.div>
       
       <div className="mt-11 flex lg:flex-nowrap flex-wrap md:flex-nowrap gap-4 justify-center justify-items-strech">
           {/* Skills */}
