@@ -34,6 +34,7 @@ export default function About() {
   
 const ref = useRef(null)
 const isInView = useInView(ref, { once: true });
+
   return (
     
     <div id="about" className="about">
@@ -150,14 +151,16 @@ const isInView = useInView(ref, { once: true });
 
 
       {/* GitHub Contributions Graph */}
+      {/* https://grubersjoe.github.io/react-activity-calendar/?path=/docs/react-activity-calendar--docs */}
       <div className="flex flex-wrap shrink my-11 pt-3 p-3">
         <GitHubCalendar
           className="flex shrink"
           username={`Naveed-SNR`}
           colorScheme="dark"
           theme={explicitTheme}
+          style={{overflow: 'hidden'}}
           fontSize={18.2}
-          blockSize={21}
+          blockSize={18.2}
           blockRadius={2}
           hideColorLegend={true}
           hideTotalCount={true}
@@ -171,14 +174,15 @@ const isInView = useInView(ref, { once: true });
         />
         <ReactTooltip style={{ color: '#00eaff', background: 'black' }} id="react-tooltip" />
         
-          <div className="flex shrink justify-between items-center w-screen ">
-            <div className="mb-11">
+          <div className="flex flex-wrap shrink justify-between items-center w-screen ">
+            <div className="overflow-hidden mb-11">
               <GitHubCalendar
-                className ="shrink"
+                className ="overflow-hidden shrink"
                 username={`Naveed-SNR`}
                 colorScheme="dark"
                 theme={explicitTheme}
                 labels={labels}
+                totalCount={3}
                 blockSize={0}
                 hideMonthLabels={true}
                 hideColorLegend={true}
