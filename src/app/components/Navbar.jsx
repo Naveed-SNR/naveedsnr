@@ -48,17 +48,17 @@ export default function Navbar () {
     return (
         <>
             <motion.nav initial={{opacity: 0, y:-100}} animate={{opacity: 1, y:0}} transition={{delay: 0.03, duration: 0.021,  type: "spring", stiffness: 128}} className={navbg ? 'navbar nav-bg' : 'navbar'}>
-                <div className="text-4xl font-black ">
+                <div className="hover:scale-38 text-4xl font-black duration-100">
                     <Link href="/">
                         <span className="logo">{`<\\>`}</span>
                     </Link>
                 </div>
-                <div className="flex justify-center absolute items-center font-medium space-x-8 right-0 lg:me-28 me-11">
+                <div className="flex justify-center absolute items-center font-medium space-x-8 right-0 lg:me-28 me-11 dark:text-secondary-100 text-secondaryl-100/83">
                     <div className="lg:flex hidden items-center space-x-8">
                         <Link href="/#about" >About</Link>
                         <Link href="/#projects" >Projects</Link>
                         <Link href="/#contact" >Contact</Link>
-                        <div className="border border-slate-900/10 dark:border-slate-300/10 h-8 "></div>
+                        <div className="border border-cyan-300 dark:border-slate-300/11 h-8 "></div>
                         <DarkModeButton />
                     </div>
                     <button className="block lg:hidden" onClick={handleClick}>

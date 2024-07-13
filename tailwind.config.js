@@ -58,10 +58,19 @@ module.exports = {
           100: '#00eaff',
           200: '#00caff',
           },
-        secondary:{
+        secondary: {
          100: '#008599',
          200: '#0294b5',
-        }
+        },
+        primaryl:{
+          100: '#001491',
+          111: '#2a45f5',
+          200: '#A6E7FF',
+        },
+        secondaryl:{
+          100: '#566dfc',
+          200: '#4059f7',
+        },
       }, 
       fontSize: {
         3: ['3rem', {lineHeight: '3.8rem'}],
@@ -82,8 +91,23 @@ module.exports = {
       transitionProperty: {
         border: 'border',
       },
+      transitionDuration: {
+        182: '182ms',
+        },
+      boxShadow: {
+        'cs': '0px 0px 3px 3px rgba(0, 234, 255, 1)',
+      },
+      scale: {
+        38: '1.28',
+        83: '8.3',
+
+      },
       opacity: {
         83: '.83',
+        92: '.92',
+        74: '.72',
+        21: '.21',
+        11: '.11',
       },
       zIndex: {
         11: '11',
@@ -96,7 +120,7 @@ module.exports = {
         square: 'square',
         circle: 'circle',
         roman: 'upper-roman',
-      }
+      },
     },
   },
   plugins: [],

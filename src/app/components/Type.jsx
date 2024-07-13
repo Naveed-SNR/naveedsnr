@@ -7,9 +7,11 @@ export default function Type() {
     <Typewriter
       options={{
         strings: [
-          "Photo Editor",
+          "AI/ML Specialist",
           "Full Stack Developer",
           "UI/UX Designer",
+          "Photo Editor",
+
         ],
         autoStart: true,
         loop: true,

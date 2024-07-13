@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  transition: background-color 0.3s ease-out, color 0.3s ease-out;
-  @apply bg-white/90 dark:bg-black text-black dark:text-secondary-200 
+  transition: background-color 0.38s ease-out, color 0.3s ease-out;
+  @apply bg-cyan-100 dark:bg-black text-black dark:text-secondary-200 
 }
 
 body > div {
@@ -27,7 +27,7 @@ body > div {
 }
 
 .logo {
-  @apply text-black dark:text-primary-100 
+  @apply text-primaryl-100 dark:text-primary-100
 }
 
 .sidebar {
