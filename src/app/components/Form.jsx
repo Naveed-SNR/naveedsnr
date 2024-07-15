@@ -3,6 +3,8 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 
 export default function Form() {
+
+  const apiKey = process.env.NEXT_PUBLIC_FORM_KEY
   return (
     <div className="p-11 rounded-lg items-center min-h-screen bg-cyan-200 dark:bg-slate-950">
       <div className="text-center">
@@ -21,7 +23,7 @@ export default function Form() {
                 Message me
               </h1>
               <form action="https://api.web3forms.com/submit" method="POST" id="form">
-                <input type="hidden" name="access_key" value="b30a4878-df8c-48ae-bb59-dbac63ac39bc"/>
+                <input type="hidden" name="access_key" value={apiKey}/>
                 <input type="hidden" name="subject" value="New Submission from Web3Forms" />
                 <input type="checkbox" name="botcheck" id="" style={{ display: 'none' }} />
                 <div className="relative mb-4">
@@ -79,7 +81,7 @@ export default function Form() {
                 <div className="mb-4">
                   <button
                     type="submit"
-                    className="w-full bg-primaryl-100 dark:bg-primary-100 inline-block text-cyan-200 dark:text-black no-underline hover-bg-primary-200 py-4 px-4 rounded-md focus:outline-none"
+                    className="w-full bg-primaryl-100 dark:bg-primary-100 glow-subtle inline-block text-cyan-200 dark:text-black no-underline hover-bg-primary-200 py-4 px-4 rounded-md font-medium focus:outline-none glow-subtle button-animation"
                   >
                     Send Message
                   </button>

@@ -30,7 +30,16 @@ body > div {
   @apply text-primaryl-100 dark:text-primary-100
 }
 
-.sidebar {
+.button-animation {
+  @apply dark:hover:bg-black dark:hover:text-primary-100/83 duration-300
+}
+
+.glow {
+  @apply hover:shadow-cs hover:shadow-primaryl-100 dark:hover:shadow-primary-100 hover:-translate-y-3 duration-182
+}
+
+.glow-subtle {
+  @apply hover:shadow-csl hover:shadow-primaryl-100 hover:bg-primary-100 hover:text-primaryl-100 dark:hover:shadow-primary-100  duration-182
 }
 
 .theme-toggle {

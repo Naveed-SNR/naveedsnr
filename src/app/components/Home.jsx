@@ -23,22 +23,22 @@ export default function Home() {
             <motion.div className="mt-8 lg:text-start text-justify lg:max-w-2xl xxl:max-w-3xl max-w-md text-secondaryl-100/83 dark:text-secondary-100  xl:text-2xl xxl:text-4xl text-xl flex justify-center leading-relaxed">I specialize in creating excellent designs, modern websites, professional photo editing & more!
             </motion.div>
             <div className="xl:-mx-3 mt-11 flex lg:justify-start justify-center items-center gap-4">
-          <div className="p-3 dark:bg-zinc-950 bg-primary-100/30 hover:shadow-cs hover:shadow-primaryl-100 dark:hover:shadow-primary-100 hover:-translate-y-3 duration-182 border border-secondary-100/30 rounded-full">
+          <div className="p-3 dark:bg-zinc-950 bg-primary-100/30 glow border border-secondary-100/30 rounded-full">
             <Link href="https://github.com/Naveed-SNR">
               <Icon icon="uil:github" className="dark:text-primary-100/92 text-primaryl-100 xl:text-4xl text-3xl" />
             </Link>
           </div>
-          <div className="p-3 dark:bg-zinc-950 bg-primary-100/30 hover:shadow-cs hover:shadow-primaryl-100 dark:hover:shadow-primary-100 hover:-translate-y-3 duration-182 border border-secondary-100/30 rounded-full">
+          <div className="p-3 dark:bg-zinc-950 bg-primary-100/30 glow border border-secondary-100/30 rounded-full">
             <Link href="https://www.linkedin.com/in/naveedsnr/">
               <Icon icon="mdi:linkedin" className="dark:text-primary-100/92 text-primaryl-100 xl:text-4xl text-3xl" />
             </Link>
           </div>
-          <div className="p-3 dark:bg-zinc-950 bg-primary-100/30 hover:shadow-cs hover:shadow-primaryl-100 dark:hover:shadow-primary-100 hover:-translate-y-3 duration-182 border border-secondary-100/30 rounded-full">
+          <div className="p-3 dark:bg-zinc-950 bg-primary-100/30 glow border border-secondary-100/30 rounded-full">
             <Link href="https://x.com/naveed_snr">
               <Icon icon="simple-icons:x" className="dark:text-primary-100/92 text-primaryl-100 xl:text-4xl text-3xl" />
             </Link>
           </div>
-          <div className="p-3 dark:bg-zinc-950 bg-primary-100/30 hover:shadow-cs hover:shadow-primaryl-100 dark:hover:shadow-primary-100 hover:-translate-y-3 duration-182 border border-secondary-100/30 rounded-full">
+          <div className="p-3 dark:bg-zinc-950 bg-primary-100/30 glow border border-secondary-100/30 rounded-full">
             <Link href="https://www.instagram.com/naveed.snr/">
               <Icon icon="mdi:instagram" className="dark:text-primary-100/92 text-primaryl-100 xl:text-4xl text-3xl" />
             </Link>

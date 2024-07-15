@@ -44,7 +44,7 @@ export default function About() {
 
         <div className="w-full justify-self-center self-center text-center p-11">
           <div className="text-primaryl-100 dark:text-primary-100 text-4xl font-bold">About</div>
-          <div className="p-4 text-secondaryl-200 dark:text-secondary-100 text-xl">Here's a little about myself</div>
+          <div className="p-4 text-secondaryl-200 dark:text-secondary-100 text-xl">{`Here's a little about myself`}</div>
         </div>
         {/* Profile */}
         {/* <div className="mb-8 flex flex-wrap justify-center items-start gap-4">

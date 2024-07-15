@@ -64,7 +64,7 @@ const DarkModeButton = () => {
     checked={isDarkMode}
     onChange={toggleTheme}
     size={21}
-    moonColor='#000000'
+    moonColor='#001491'
     sunColor='#00eaff'
   />
   )
