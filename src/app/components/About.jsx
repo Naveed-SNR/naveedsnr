@@ -40,7 +40,7 @@ export default function About() {
 
     <div id="about" className="about">
 
-      <motion.div style={{ opacity: isInView ? 1 : 0 }} ref={ref} className="xl:p-11 p-4 flex flex-wrap justify-center items-start bg-cyan-200 dark:bg-gray-950 w-full relative rounded-md">
+      <motion.div style={{ opacity: isInView ? 1 : 0 }} ref={ref} className="xl:p-11 p-4 flex flex-wrap justify-center items-start bg-cyan-200 dark:bg-slate-950 w-full relative rounded-md">
 
         <div className="w-full justify-self-center self-center text-center p-11">
           <div className="text-primaryl-100 dark:text-primary-100 text-4xl font-bold">About</div>
