@@ -41,12 +41,12 @@ const animation = {
 
 const DarkModeButton = () => {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme("light")
+  const { theme, setTheme } = useTheme("dark")
   const [isDarkMode, setDarkMode] = useState(false);
 
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark":"light")
+    setTheme(theme === "dark" ? "light":"dark")
     setDarkMode(!isDarkMode)
   }
   useEffect(() => {

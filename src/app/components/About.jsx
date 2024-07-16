@@ -84,7 +84,7 @@ export default function About() {
 
       <div className="mt-11 flex lg:flex-nowrap flex-wrap md:flex-nowrap gap-4 justify-center justify-items-strech">
         {/* Skills */}
-        <div className="px-14 w-full flex sm:flex-wrap justify-center align-middle bg-cyan-200 dark:bg-slate-950 p-11 rounded-md shrink">
+        <div className="px-8.3 md:px-11 w-full flex sm:flex-wrap justify-center align-middle bg-cyan-200 dark:bg-slate-950 p-11 rounded-md shrink">
           <div className="text-secondaryl-200 dark:text-secondary-200">
             <h1 className="lg:text-3xl text-2xl font-semibold">Skills</h1>
             <div className=" mt-8 text-secondaryl-200 dark:text-secondary-200">
@@ -154,7 +154,7 @@ export default function About() {
       {/* GitHub Contributions Graph */}
       {/* https://grubersjoe.github.io/react-activity-calendar/?path=/docs/react-activity-calendar--docs */}
       <div className="flex flex-wrap shrink my-11 pt-3 p-3">
-        <div className=" mb-11">
+        <div className="mb-11">
           <GitHubCalendar
             className="flex shrink"
             username={`Naveed-SNR`}

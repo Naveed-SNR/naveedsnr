@@ -6,9 +6,9 @@ export default function Form() {
 
   const apiKey = process.env.NEXT_PUBLIC_FORM_KEY
   return (
-    <div className="p-11 rounded-lg items-center min-h-screen bg-cyan-200 dark:bg-slate-950">
+    <div className="p-3.8 lg:p-11 rounded-lg items-center min-h-screen bg-cyan-200 dark:bg-slate-950">
       <div className="text-center">
-        <h1 className="my-3 text-3xl font-semibold text-primaryl-100 dark:text-primary-100">
+        <h1 className="my-11 md:my-3 text-3xl font-semibold text-primaryl-100 dark:text-primary-100">
           Contact Us
         </h1>
         <p className="text-secondaryl-200 dark:text-secondary-200">
@@ -16,9 +16,9 @@ export default function Form() {
         </p>
       </div>
       <div>
-        <div className="p-3 flex flex-wrap justify-center items-center w-full">
+        <div className="p-1 md:p-3 flex flex-wrap flex-shrink justify-center items-center w-full">
           <div className="max-w-xl w-full my-11 rounded-lg shadow-sm">
-            <div className="m-8">
+            <div className="m-3 md:m-8">
               <h1 className="my-4 text-2xl font-medium text-secondaryl-200 dark:text-secondary-200">
                 Message me
               </h1>
@@ -91,30 +91,30 @@ export default function Form() {
             </div>
           </div>
           <div className="max-w-xl w-full my-11 self-start rounded-lg ">
-            <div className="m-8">
+            <div className="m-2.1 md:m-8.3">
               <h1 className="my-4 text-2xl font-medium text-secondaryl-200 dark:text-secondary-200">
                 Contact Information
               </h1>
-              <div className="mt-9.2 p-9.2 border-l border-cyan-300 dark:border-secondary-100/30">
-              <div className="flex items-center mb-11 text-secondaryl-200 dark:text-secondary-200">
-                    <Icon icon="ic:round-email" className="text-4xl" />
+              <div className="mt-9.2 p-3 md:p-9.2 border-l border-cyan-300 dark:border-secondary-100/30">
+              <div className="flex flex-wrap items-center mb-11 text-secondaryl-200 dark:text-secondary-200">
+                    <Icon icon="ic:round-email" className="text-xl md:text-4xl" />
                   <div>
                     <span className="ms-3 text-lg font-medium">Email</span><br/>
-                    <span className="ms-3 text-secondaryl-100 dark:text-secondary-200 text-base">sheikhnaveed3660@gmail.com</span>
+                    <span className="ms-3 text-secondaryl-100 dark:text-secondary-200 text-sm md:text-base">sheikhnaveed3660@gmail.com</span>
                   </div>
                 </div>
                 <div className="flex items-center mb-11 text-secondaryl-200 dark:text-secondary-200">
-                    <Icon icon="ic:round-phone" className="text-4xl" />
+                    <Icon icon="ic:round-phone" className="text-xl md:text-4xl" />
                   <div>
                     <span className="ms-3 text-lg font-medium">Phone Number</span><br/>
-                    <span className="ms-3 text-secondaryl-100 dark:text-secondary-200 text-base">+91 7051966050</span>
+                    <span className="ms-3 text-secondaryl-100 dark:text-secondary-200 text-sm md:text-base">+91 7051966050</span>
                   </div>
                 </div>
                 <div className="flex items-center mb-11 text-secondaryl-200 dark:text-secondary-200">
-                    <Icon icon="ic:baseline-location-on" className="text-4xl" />
+                    <Icon icon="ic:baseline-location-on" className="text-xl md:text-4xl" />
                   <div>
                     <span className="ms-3 text-lg font-medium">Location</span><br/>
-                    <span className="ms-3 text-secondaryl-100 dark:text-secondary-200 text-base">Srinagar, Kashmir - 190006</span>
+                    <span className="ms-3 text-secondaryl-100 dark:text-secondary-200 text-sm md:text-base">Srinagar, Kashmir - 190006</span>
                   </div>
                 </div>
               </div>

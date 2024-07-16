@@ -13,16 +13,16 @@ body {
 }
 
 body > div {
-  @apply  mt-11 lg:mx-32 mx-8
+  @apply  mt-11 lg:mx-32 mx-3
 }
 
 
 .navbar {
   transition: background-color 0.83s ease-out;
-  @apply sticky bg-transparent lg:px-32 py-1 items-center flex h-14 top-0 w-full z-30 
+  @apply sticky bg-transparent px-3.8 lg:px-32 py-1 items-center flex justify-between h-14 top-0 w-full z-30 
 }
 .nav-bg {
-  @apply  dark:bg-black/83  backdrop-blur-md border-b border-slate-900/10 dark:border-slate-300/10;
+  @apply  dark:bg-black/83  backdrop-blur-md border-b border-primaryl-100/30 dark:border-secondary-100/30;
 
 }
 
@@ -39,7 +39,7 @@ body > div {
 }
 
 .glow-subtle {
-  @apply hover:shadow-csl hover:shadow-primaryl-100 hover:bg-primary-100 hover:text-primaryl-100 dark:hover:shadow-primary-100  duration-182
+  @apply hover:shadow-csl hover:shadow-primaryl-100 hover:bg-primary-100 hover:text-primaryl-100 dark:hover:shadow-primary-100 duration-182
 }
 
 .theme-toggle {
