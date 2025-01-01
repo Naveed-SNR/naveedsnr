@@ -11,7 +11,7 @@ export default function Projects() {
     <div id="projects" className="projects py-11 my-30 border border-cyan-300 dark:border-slate-300/11 rounded-lg ">
       <div className="text-center p-11">
         <div className="text-primaryl-100 dark:text-primary-100 text-4xl font-bold">Projects</div>
-        <div className="p-4 text-secondaryl-200 dark:text-secondary-100 text-xl">Here's some of my work.</div>
+        <div className="p-4 text-secondaryl-200 dark:text-secondary-100 text-xl">{`Here's some of my work.`}</div>
       </div>
       <div className="mt-4 w-full flex flex-wrap justify-center items-center gap-11">
       {/*cards*/}
